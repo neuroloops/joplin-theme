@@ -1,5 +1,10 @@
+/* For styling the rendered Markdown */
+.inline-code, code{   
+    font-family: victor mono
+}
+
 /* html-ized markdown */
-/* designed by uxamanda (https://discourse.joplinapp.org/u/uxamanda). latest version https://github.com/amandamcg/joplin-theme */
+/* designed by uxamanda (https://discourse.joplinapp.org/u/uxamanda) modified by neuroloops */
 :root {
     --white: #e3e3e3;
     --dark-white: #EEF0EA;
@@ -7,7 +12,8 @@
     --grey: #575856;
     --dark-grey: #272728;
     --darker-grey: #1D2024;
-    --black: #131517;
+    --black: #2e3138;
+    --bg-code: #1d2024;
     --base-size-1: 1px;
     --base-size-4: 4px;
     --base-size-8: 8px;
@@ -23,7 +29,7 @@
     --font-weight-base: 400;
     --font-weight-bold: 500;
     --font-sans: "IBM Plex Sans";
-    --font-mono: "IBM Plex Mono";
+    --font-mono: "victor mono";
     --primary: #0097DB;
     --secondary: #00dbcc;
     --font-line-height: 1.4em;
@@ -32,7 +38,7 @@
 }
 
 .hljs {
-    background-color: black;
+    background-color: var(--bg-code);
     padding: var(--base-size-18);
     border-radius: var(--base-size-4) !important;
 }
@@ -169,7 +175,7 @@ pre {
 .inline-code {
     padding: .3em .6em !important;
     border-radius: var(--base-size-4) !important;
-    background-color: #040404 !important;
+    background-color: var(--bg-code) !important;
     border: none !important;
     color: #abb2bf !important;
 }
