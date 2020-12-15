@@ -1,13 +1,15 @@
-/* For styling the Joplin app (except the HTML-ized markdown, which is defined in `userstyle.css`) */
-/* designed by uxamanda (https://discourse.joplinapp.org/u/uxamanda). latest version https://github.com/amandamcg/joplin-theme */
+/* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
+
+
+/* designed by uxamanda https://github.com/amandamcg/joplin-theme */
+/* modified by neuroloops                                         */
 :root {
     --white: #e3e3e3;
     --dark-white: #EEF0EA;
     --light-grey: #A3A79F;
-    --grey: #575856;
     --dark-grey: #272728;
-    --darker-grey: #1D2024;
-    --black: #131517;
+    --darker-grey: #2e3138;
+    --black: #232629;
     --base-size-1: 1px;
     --base-size-4: 4px;
     --base-size-8: 8px;
@@ -22,9 +24,7 @@
     --font-weight-light: 200;
     --font-weight-base: 400;
     --font-weight-bold: 500;
-    --font-sans: "IBM Plex Sans";
-    --font-mono: "IBM Plex Mono";
-    --primary: #0097DB;
+    --primary: teal;
     --secondary: #00dbcc;
     --font-line-height: 1.4em;
     --font-size: var(--base-size-13);
@@ -52,7 +52,8 @@ body {
 }
 
 #react-root>div>div>div:last-child {
-    background-color: var(--black);
+/*     background-color: var(--black); */
+    background-color: var(--darker-grey);
     border-left: none !important;
 }
 
@@ -90,6 +91,8 @@ body {
 
 .ace_content {
     background-color: var(--black) !important;
+    
+    
 }
 
 .ace_editor div, .ace_editor span {
@@ -127,7 +130,7 @@ body {
 /* gui */
 .side-bar {
     background-color: var(--darker-grey) !important;
-    opacity: 0.8;
+/*     opacity: 0.8; */
 }
 
 .side-bar .folders {}
@@ -186,7 +189,7 @@ body {
 
 /* icons */
 .fa, .far, .fas {
-    color: var(--grey) !important;
+    color: var(--light-grey) !important;
     padding-right: var(--base-size-4);
 }
 
@@ -361,10 +364,27 @@ input:focus {
     color: var(--light-grey) !important
 }
 
+.cm-variable-3 {
+    color: #259477 !important 
+}
+.cm-keyword {
+    color: #0163b3!important
+}
+
 .cm-s-material-darker .cm-string {
     color: var(--primary) !important
 }
 
 .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4 {
     color: var(--dark-white) !important
+}
+
+.zCafL, .icon-note, .fa-check-square, .tox-tbtn  div{
+    background-color: var(--dark-grey) !important;
+    color: var(--light-grey) !important;
+    background: white;
+}
+
+.editor-toolbar{
+    background-color: var(--darker-grey) !important;
 }
