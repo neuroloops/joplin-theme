@@ -8,7 +8,7 @@ a dark mode theme for Joplin.
 
 Joplin is an open source note taking app. Learn more about [Joplin](http://joplinapp.org).
 
-It has been tested on Mac version Joplin Joplin 1.0.232 (prod, darwin)
+It has been tested on Manjaro with AUR package version Joplin 1.4.19(prod, Linux)
 
 ## Screenshots
 ![joplin_Dark_arc.png](/screenshots/joplin_Dark_arc.png)
