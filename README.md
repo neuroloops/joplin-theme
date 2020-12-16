@@ -1,4 +1,5 @@
 ### NOTE: This theme works best on the "old" design of Joplin. It has not been integrated with the new design launched Fall 2020.
+forked from [https://github.com/amandamcg/joplin-theme](https://github.com/amandamcg/joplin-theme)
 
 ---
 ## joplin theme
@@ -10,16 +11,18 @@ Joplin is an open source note taking app. Learn more about [Joplin](http://jopli
 It has been tested on Mac version Joplin Joplin 1.0.232 (prod, darwin)
 
 ## Screenshots
-![v0.7.1-updates.png](/screenshots/v0.7.1-updates.png)
+![joplin_Dark_arc.png](/screenshots/joplin_Dark_arc.png)
 
 ## 1. Install Font
 
-This theme assumes you have IBM Plex Sans and IBM Plex Mono installed on your computer.
 
-Install those from [https://github.com/IBM/plex](https://github.com/IBM/plex) or change the following lines in the `:root` section of  `userstyle.css` and `userchrome.css` to your favorite font:
+This theme assumes you have IBM Plex Sans and Victor Mono (for ligature support) installed on your computer.
+Thoses fonts are only use for the preview.
+
+Install those from [https://github.com/IBM/plex](https://github.com/IBM/plex) and [https://rubjo.github.io/victor-mono/](https://rubjo.github.io/victor-mono/) or change the following lines in the `:root` section of  `userstyle.css` and `userchrome.css` to your favorite font:
 ```
 --font-sans: "IBM Plex Sans";
---font-mono: "IBM Plex Mono";
+--font-mono: "victor mono";
 ```
 
 ## 2. Install Theme
@@ -50,13 +53,13 @@ Lots of this theme is defined in the `:root` section of  `userstyle.css` and `us
 
 ```
 :root {
-    --white: #e3e3e3;
+       --white: #e3e3e3;
     --dark-white: #EEF0EA;
     --light-grey: #A3A79F;
-    --grey: #575856;
     --dark-grey: #272728;
-    --darker-grey: #1D2024;
-    --black: #131517;
+    --darker-grey: #2e3138;
+    --black: #232629;
+    --hover-list: #1E4357;
     --base-size-1: 1px;
     --base-size-4: 4px;
     --base-size-8: 8px;
@@ -71,10 +74,8 @@ Lots of this theme is defined in the `:root` section of  `userstyle.css` and `us
     --font-weight-light: 200;
     --font-weight-base: 400;
     --font-weight-bold: 500;
-    --font-sans: "IBM Plex Sans";
-    --font-mono: "IBM Plex Mono";
-    --primary: #0097DB;
-    --secondary: #005378;
+    --primary: teal;
+    --secondary: #00dbcc;
     --font-line-height: 1.4em;
     --font-size: var(--base-size-13);
     --icon-size: var(--font-size);
