@@ -3,6 +3,7 @@
 
 /* designed by uxamanda https://github.com/amandamcg/joplin-theme */
 /* modified by neuroloops                                         */
+
 :root {
     --white: #e3e3e3;
     --dark-white: #EEF0EA;
@@ -10,6 +11,7 @@
     --dark-grey: #272728;
     --darker-grey: #2e3138;
     --black: #232629;
+    --hover-list: #1E4357;
     --base-size-1: 1px;
     --base-size-4: 4px;
     --base-size-8: 8px;
@@ -322,7 +324,8 @@ input:focus {
 }
 
 .note-list .list-item-container:hover, .folders .list-item-container:hover {
-    background-color: var(--grey) !important;
+    background-color: var(--hover-list) !important;
+    
 }
 
 .folders a.list-item {
@@ -387,4 +390,8 @@ input:focus {
 
 .editor-toolbar{
     background-color: var(--darker-grey) !important;
+}
+
+.kMzLKP, .dBvxeh{
+    background: var(--hover-list) !important;
 }
